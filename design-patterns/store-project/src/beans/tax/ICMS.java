@@ -1,4 +1,6 @@
-package beans;
+package beans.tax;
+
+import beans.budget.Budget;
 
 import java.math.BigDecimal;
 
