@@ -5,8 +5,6 @@ G
 src/beans/tax/ICMS.java,8\8\88052cdeca6dd776e47744b2ad5490c6940badfd
 P
  src/beans/tax/TaxCalculator.java,c\2\c2f26cb305d5e5ef4ace0a0315eb41b0edad7df4
-L
-src/beans/budget/Budget.java,7\d\7d896b58e6f70cedb1fa421dd9d1919463c59549
 @
 src/MainTax.java,c\1\c1956fefc9b6675cbc5cef5f5dcb6a21648b7a26
 F
