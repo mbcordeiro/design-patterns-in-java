@@ -24,6 +24,10 @@ public class Budget {
         var valueExtraDiscount =  BigDecimal.ZERO;
         if (budgetStatus.equals("ANALYSIS")) valueExtraDiscount = new BigDecimal("0.05");
         else if (budgetStatus.equals("APPROVED")) valueExtraDiscount = new BigDecimal("0.02");
-        this.value = valueExtraDiscount;
+        this.value = this.value.subtract(valueExtraDiscount);
+    }
+
+    public void approveBudgetStatus() {
+        this.budgetStatus = "APPROVED";
     }
 }
