@@ -1,7 +1,8 @@
 package domain.order;
 
-public class SendEmailOrder {
-    public void send(Order order) {
+public class SendEmailOrder implements ActionAfterGenerateOrder{
+    @Override
+    public void execute(Order order) {
         System.out.println("Send email with data new order");
     }
 }
