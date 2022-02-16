@@ -1,5 +1,5 @@
-import beans.budget.Budget;
-import beans.discount.DiscountCalculator;
+import domain.budget.Budget;
+import domain.discount.DiscountCalculator;
 
 import java.math.BigDecimal;
 

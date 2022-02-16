@@ -1,6 +1,6 @@
-package beans.discount;
+package domain.discount;
 
-import beans.budget.Budget;
+import domain.budget.Budget;
 
 import java.math.BigDecimal;
 

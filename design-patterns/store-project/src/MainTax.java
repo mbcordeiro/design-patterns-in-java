@@ -1,7 +1,7 @@
-import beans.budget.Budget;
-import beans.tax.ICMS;
-import beans.tax.ISS;
-import beans.tax.TaxCalculator;
+import domain.budget.Budget;
+import domain.tax.ICMS;
+import domain.tax.ISS;
+import domain.tax.TaxCalculator;
 
 import java.math.BigDecimal;
 
