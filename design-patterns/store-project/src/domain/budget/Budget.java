@@ -1,6 +1,7 @@
 package domain.budget;
 
 import domain.budget.status.BudgetAnalysis;
+import domain.budget.status.BudgetFinished;
 import domain.budget.status.BudgetStatus;
 
 import java.math.BigDecimal;
@@ -49,4 +50,7 @@ public class Budget {
         this.budgetStatus.finish(this);
     }
 
+    public boolean isFinish() {
+        return budgetStatus instanceof BudgetFinished;
+    }
 }
