@@ -16,11 +16,16 @@ public class GenerateOrder {
         this.quantityItems = quantityItems;
     }
 
-    public void execute() {
-        final var budget = new Budget(this.budgetValue, this.quantityItems);
-        final var order = new Order(this.costumer, LocalDateTime.now(), budget);
-
-        System.out.println("Persist order in database");
-        System.out.println("Send email with data new order");
+    public String getCostumer() {
+        return costumer;
     }
+
+    public BigDecimal getBudgetValue() {
+        return budgetValue;
+    }
+
+    public int getQuantityItems() {
+        return quantityItems;
+    }
+
 }

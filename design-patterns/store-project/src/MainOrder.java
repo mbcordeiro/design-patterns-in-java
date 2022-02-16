@@ -1,4 +1,5 @@
 import domain.order.GenerateOrder;
+import domain.order.GenerateOrderHandler;
 
 import java.math.BigDecimal;
 
@@ -9,6 +10,7 @@ public class MainOrder {
         final var quantityItems = Integer.parseInt(args[2]);
 
         final var generateOrder = new GenerateOrder(costumer, budgetValue, quantityItems);
-        generateOrder.execute();
+        final var generateOrderHandler  = new GenerateOrderHandler();
+        generateOrderHandler.execute(generateOrder);
     }
 }
