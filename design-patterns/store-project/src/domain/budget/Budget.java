@@ -33,7 +33,7 @@ public class Budget {
     }
 
     public void applyExtraDiscount() {
-        var valueExtraDiscount =  this.budgetStatus.calculateExtraDiscount(this);
+        final var valueExtraDiscount =  this.budgetStatus.calculateExtraDiscount(this);
         this.value = this.value.subtract(valueExtraDiscount);
     }
 
