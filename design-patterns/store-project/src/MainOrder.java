@@ -1,16 +1,14 @@
-import domain.budget.Budget;
-import domain.order.Order;
+import domain.order.GenerateOrder;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 public class MainOrder {
     public static void main(String[] args) {
-        final var budget = new Budget(new BigDecimal("600"), 4);
-        final var order = new Order("Costumer", LocalDateTime.now(), budget);
+        final var costumer = args[0];
+        final var budgetValue = new BigDecimal(args[1]);
+        final var quantityItems = Integer.parseInt(args[2]);
 
-        System.out.println("Persist order in database");
-        System.out.println("Send email with data new order");
-
+        final var generateOrder = new GenerateOrder(costumer, budgetValue, quantityItems);
+        generateOrder.execute();
     }
 }
