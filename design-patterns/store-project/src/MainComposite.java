@@ -1,5 +1,6 @@
 import domain.budget.Budget;
 import domain.budget.BudgetItem;
+import domain.budget.BudgetProxy;
 
 import java.math.BigDecimal;
 
@@ -13,6 +14,13 @@ public class MainComposite {
         budgetNew.addItem(new BudgetItem(new BigDecimal("500")));
         budgetNew.addItem(budgetOld);
 
-        System.out.println(budgetNew.getValue());
+        final var proxy =new BudgetProxy(budgetNew);
+
+        System.out.println(proxy.getValue());
+        System.out.println(proxy.getValue());
+        System.out.println(proxy.getValue());
+        System.out.println(proxy.getValue());
+        System.out.println(proxy.getValue());
+        System.out.println(proxy.getValue());
     }
 }
