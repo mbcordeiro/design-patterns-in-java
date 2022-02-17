@@ -3,6 +3,7 @@ package domain.budget;
 import domain.exception.DomainException;
 import domain.http.HttpAdapter;
 
+import java.net.MalformedURLException;
 import java.util.Map;
 
 public class BudgetRecord {
@@ -12,7 +13,7 @@ public class BudgetRecord {
         this.httpAdapter = httpAdapter;
     }
 
-    public void register(Budget budget) {
+    public void register(Budget budget) throws MalformedURLException {
         if (!budget.isFinish())
             throw new DomainException("Budget not Finished");
         final var url = "https://api/budget";

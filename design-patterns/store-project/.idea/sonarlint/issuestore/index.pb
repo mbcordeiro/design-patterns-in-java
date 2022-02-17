@@ -5,8 +5,6 @@ Y
 )src/domain/exception/DomainException.java,b\2\b24e444f18b794b9c3581787243915e301ccc67f
 Z
 *src/domain/budget/status/BudgetStatus.java,5\1\51e00cbfa7c86ba63e3a9e67612f2dab44fdcf3b
-@
-src/MainTax.java,c\1\c1956fefc9b6675cbc5cef5f5dcb6a21648b7a26
 \
 ,src/domain/budget/status/BudgedApproved.java,7\a\7a19c8af516999a478d9cdb74992158767d6033a
 \
@@ -39,13 +37,9 @@ B
 .src/domain/order/ActionAfterGenerateOrder.java,8\0\801c7eeee26e2add7dbfd1f1b2761a652d500845
 M
 src/domain/budget/Budget.java,6\8\68ab13243a631bf229dbacc39087fda43c58d837
-S
-#src/domain/budget/BudgetRecord.java,0\9\095abf5c135021fc12777f26d466dd357006e004
 P
  src/domain/http/HttpAdapter.java,b\5\b542e0bc2d39eaac5821c8747beef731becc65c0
 T
 $src/domain/http/JavahHttpClient.java,8\3\837603aed5c0e08e37cd767bf20dbae4c5a61ef7
 E
 src/MainDiscount.java,f\e\fe86b42c578a1cdec99f320821fc75b89f3a61c1
-A
-src/MainHttp.java,1\6\161771970cd733df9a22325911ba257da8ec242c

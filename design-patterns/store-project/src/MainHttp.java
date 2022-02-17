@@ -3,9 +3,10 @@ import domain.budget.BudgetRecord;
 import domain.http.JavahHttpClient;
 
 import java.math.BigDecimal;
+import java.net.MalformedURLException;
 
 public class MainHttp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MalformedURLException {
         final var budget = new Budget(BigDecimal.TEN, 6);
         budget.approve();
         budget.finish();
