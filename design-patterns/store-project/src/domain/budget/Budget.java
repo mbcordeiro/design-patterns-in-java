@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Budget implements Budgetable{
+public class Budget implements Budgetable {
     private BigDecimal value;
     private BudgetStatus budgetStatus;
     private List<Budgetable> budgetItems;
@@ -20,6 +20,11 @@ public class Budget implements Budgetable{
     }
 
     public BigDecimal getValue() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return value;
     }
 
@@ -36,7 +41,7 @@ public class Budget implements Budgetable{
     }
 
     public void applyExtraDiscount() {
-        final var valueExtraDiscount =  this.budgetStatus.calculateExtraDiscount(this);
+        final var valueExtraDiscount = this.budgetStatus.calculateExtraDiscount(this);
         this.value = this.value.subtract(valueExtraDiscount);
     }
 
