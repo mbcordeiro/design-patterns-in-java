@@ -5,15 +5,17 @@ import domain.budget.status.BudgetFinished;
 import domain.budget.status.BudgetStatus;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Budget {
     private BigDecimal value;
-    private int quantityItems;
     private BudgetStatus budgetStatus;
+    private List<BudgetItem> budgetItems;
 
-    public Budget(BigDecimal value, int quantityItems) {
-        this.value = value;
-        this.quantityItems = quantityItems;
+    public Budget() {
+        this.value = BigDecimal.ZERO;
+        this.budgetItems = new ArrayList<>();
         this.budgetStatus = new BudgetAnalysis();
     }
 
@@ -22,7 +24,7 @@ public class Budget {
     }
 
     public int getQuantityItems() {
-        return quantityItems;
+        return budgetItems.size();
     }
 
     public BudgetStatus getBudgetStatus() {
@@ -52,5 +54,10 @@ public class Budget {
 
     public boolean isFinish() {
         return budgetStatus instanceof BudgetFinished;
+    }
+
+    public void addItem(BudgetItem budgetItem) {
+        this.value = value.add(budgetItem.getValue());
+        this.budgetItems.add(budgetItem);
     }
 }

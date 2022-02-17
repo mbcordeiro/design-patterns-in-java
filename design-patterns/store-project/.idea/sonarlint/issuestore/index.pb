@@ -31,15 +31,9 @@ R
 "src/domain/order/PersistOrder.java,e\e\ee8e4845993082577fbf858a35dba3ddb5415ff3
 Z
 *src/domain/order/GenerateOrderHandler.java,d\d\dd7be07cf512b05326c7c33f22b2cbd479f91fe2
-B
-src/MainOrder.java,7\0\70a9b18d28e05f24c3104f59ed19a876056d6468
 ^
 .src/domain/order/ActionAfterGenerateOrder.java,8\0\801c7eeee26e2add7dbfd1f1b2761a652d500845
-M
-src/domain/budget/Budget.java,6\8\68ab13243a631bf229dbacc39087fda43c58d837
 P
  src/domain/http/HttpAdapter.java,b\5\b542e0bc2d39eaac5821c8747beef731becc65c0
 T
 $src/domain/http/JavahHttpClient.java,8\3\837603aed5c0e08e37cd767bf20dbae4c5a61ef7
-E
-src/MainDiscount.java,f\e\fe86b42c578a1cdec99f320821fc75b89f3a61c1
