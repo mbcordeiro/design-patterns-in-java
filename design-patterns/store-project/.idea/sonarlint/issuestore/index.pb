@@ -3,8 +3,6 @@ Q
 !src/domain/discount/Discount.java,9\e\9e2acdce88b31e9849e222d3eeca9c303557807d
 Y
 )src/domain/exception/DomainException.java,b\2\b24e444f18b794b9c3581787243915e301ccc67f
-Z
-*src/domain/budget/status/BudgetStatus.java,5\1\51e00cbfa7c86ba63e3a9e67612f2dab44fdcf3b
 \
 ,src/domain/budget/status/BudgedApproved.java,7\a\7a19c8af516999a478d9cdb74992158767d6033a
 \
@@ -29,8 +27,6 @@ T
 $src/domain/order/SendEmailOrder.java,1\7\17e15d960e1dae1c49202ee01befab17e73b7f31
 R
 "src/domain/order/PersistOrder.java,e\e\ee8e4845993082577fbf858a35dba3ddb5415ff3
-Z
-*src/domain/order/GenerateOrderHandler.java,d\d\dd7be07cf512b05326c7c33f22b2cbd479f91fe2
 ^
 .src/domain/order/ActionAfterGenerateOrder.java,8\0\801c7eeee26e2add7dbfd1f1b2761a652d500845
 P

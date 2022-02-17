@@ -8,10 +8,10 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Budget {
+public class Budget implements Budgetable{
     private BigDecimal value;
     private BudgetStatus budgetStatus;
-    private List<BudgetItem> budgetItems;
+    private List<Budgetable> budgetItems;
 
     public Budget() {
         this.value = BigDecimal.ZERO;
@@ -56,8 +56,8 @@ public class Budget {
         return budgetStatus instanceof BudgetFinished;
     }
 
-    public void addItem(BudgetItem budgetItem) {
-        this.value = value.add(budgetItem.getValue());
-        this.budgetItems.add(budgetItem);
+    public void addItem(Budgetable budgetable) {
+        this.value = value.add(budgetable.getValue());
+        this.budgetItems.add(budgetable);
     }
 }
