@@ -19,6 +19,5 @@ public class MainDiscount {
         System.out.println(discountCalculator.calculate(budget));
         System.out.println(discountCalculator.calculate(budgetSecond));
         System.out.println(discountCalculator.calculate(budgetThird));
-        System.out.println(discountCalculator.calculate(budgetThird));
     }
 }
